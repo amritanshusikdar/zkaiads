@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import MainContainer from '../components/MainContainer';
+import {SwipeableImageStack} from '../components/SwipeableImageStack/SwipeableImageStack';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
             <IonTitle size="large">Zkai Ads</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <MainContainer />
+          <SwipeableImageStack />
       </IonContent>
     </IonPage>
   );

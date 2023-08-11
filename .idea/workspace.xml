@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c444bc36-1699-424a-b472-5112a32f1d70" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/ExploreContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/MainContainer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/ExploreContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/MainContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/CustomButton/CustomButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/IconButton/IconButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/CustomButton/CustomButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/IconButton/IconButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/MainContainer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/MainContainer.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,9 +100,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="Solidity Contract" />
         <option value="Python Script" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -145,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691781277622</updated>
-      <workItem from="1691781279682" duration="6050000" />
+      <workItem from="1691781279682" duration="6995000" />
     </task>
     <servers />
   </component>
