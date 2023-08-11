@@ -1,8 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import MainContainer from '../components/MainContainer';
 import './Home.css';
-import {CustomButton} from "../components/CustomButton/CustomButton";
-import {checkmark, close} from "ionicons/icons"
 
 const Home: React.FC = () => {
   return (
@@ -18,9 +16,7 @@ const Home: React.FC = () => {
             <IonTitle size="large">Zkai Ads</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
-          <CustomButton icon={close} text={"Nope"} />
-          <CustomButton icon={checkmark} text={"Yep"} />
+        <MainContainer />
       </IonContent>
     </IonPage>
   );
