@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ba2ca8-5bef-4d24-bd40-0b5915133d56" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/UDI/UDITab.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/UDI/UDITab.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-app/src/routes/app.routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/src/routes/app.routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/SwipeableImageStack/SwipeableImageStack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/SwipeableImageStack/SwipeableImageStack.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MTConfigurable",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
     "ts.external.directory.path": "/Users/da_sikka_x/Documents/ethmunich/zkaiads/app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -68,11 +65,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691831549666</updated>
-      <workItem from="1691831551741" duration="2852000" />
+      <workItem from="1691831551741" duration="3353000" />
+      <workItem from="1691834960372" duration="1260000" />
+      <workItem from="1691838872754" duration="459000" />
+      <workItem from="1691839340950" duration="31000" />
+      <workItem from="1691839380584" duration="3532000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
