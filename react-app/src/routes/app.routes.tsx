@@ -11,7 +11,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeButtom from '../components/HomeButton';
 import Discover from '../pages/Discover';
-import Home from '../pages/Home';
+import UDITab from '../pages/Home';
 import Inbox from '../pages/Inbox';
 import Me from '../pages/Me';
 import Record from '../pages/Record';
@@ -42,7 +42,7 @@ const AppRoutes: React.FC = () => {
       barStyle={{
         backgroundColor: home ? '#000' : '#fff',
       }}
-      initialRouteName="Home"
+      initialRouteName="UDITab"
       activeColor={home ? '#fff' : '#000'}
     >
       <Tab.Screen

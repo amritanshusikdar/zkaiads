@@ -1,19 +1,19 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import {SwipeableImageStack} from '../components/SwipeableImageStack/SwipeableImageStack';
-import './Home.css';
+import {SwipeableImageStack} from '../../components/SwipeableImageStack/SwipeableImageStack';
+import './UDITab.css';
 
-const Home: React.FC = () => {
+const UDITab: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Zkai Ads</IonTitle>
+          <IonTitle>Zkai Ads 1</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Zkai Ads</IonTitle>
+            <IonTitle size="large">Zkai Ads 1</IonTitle>
           </IonToolbar>
         </IonHeader>
           <SwipeableImageStack />
@@ -22,4 +22,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default UDITab;

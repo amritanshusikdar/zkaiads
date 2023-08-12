@@ -4,100 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c444bc36-1699-424a-b472-5112a32f1d70" name="Changes" comment="">
+    <list default="true" id="d9ba2ca8-5bef-4d24-bd40-0b5915133d56" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/UDI/UDITab.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/UDI/UDITab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-app/src/routes/app.routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-app/src/routes/app.routes.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/node_modules/@react-native-community/cli-platform-android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/@react-native/gradle-plugin">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-application/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-constants/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-constants/scripts">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-file-system/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-font/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-head/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-keep-awake/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-modules-autolinking/scripts/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-modules-core/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-modules-core/android-annotation">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-modules-core/android-annotation-processor">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-splash-screen/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-system-ui/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo-web-browser/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/expo/scripts">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/react-native">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/react-native-gesture-handler/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/react-native-safe-area-context/android">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/node_modules/react-native-screens/android">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Solidity Contract" />
-        <option value="Python Script" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -105,7 +26,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2Tqr6RXpycY6lZxzm5b0Jeq9NHo" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2TsV03jCqlpe4kuyncMuzxWxXEI" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -120,30 +44,31 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.eslint": "",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "MTConfigurable",
     "ts.external.directory.path": "/Users/da_sikka_x/Documents/ethmunich/zkaiads/app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/public" />
-      <recent name="$PROJECT_DIR$/app/src/assets" />
+      <recent name="$PROJECT_DIR$/app/src/pages/UDI" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c444bc36-1699-424a-b472-5112a32f1d70" name="Changes" comment="" />
-      <created>1691781277622</created>
+      <changelist id="d9ba2ca8-5bef-4d24-bd40-0b5915133d56" name="Changes" comment="" />
+      <created>1691831549666</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1691781277622</updated>
-      <workItem from="1691781279682" duration="9072000" />
+      <updated>1691831549666</updated>
+      <workItem from="1691831551741" duration="2852000" />
     </task>
     <servers />
   </component>

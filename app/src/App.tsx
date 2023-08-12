@@ -1,7 +1,16 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import {Redirect, Route} from 'react-router-dom';
+import {
+    IonApp,
+    IonIcon,
+    IonLabel, IonPage,
+    IonRouterOutlet,
+    IonTabBar,
+    IonTabButton,
+    IonTabs,
+    setupIonicReact
+} from '@ionic/react';
+import {IonReactRouter} from '@ionic/react-router';
+import UDITab from './pages/UDI/UDITab';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -21,22 +30,47 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import {accessibility, glasses, wallet} from "ionicons/icons";
+import DDIDTab from "./pages/DDID/DDIDTab";
+import WalletTab from "./pages/Wallet/WalletTab";
 
 setupIonicReact();
 
 const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
+    <IonApp>
+        <IonReactRouter>
+            <IonTabs>
+                <IonRouterOutlet>
+                    <Route exact path="/home">
+                        <UDITab />
+                    </Route>
+                    <Route exact path={"/something"}>
+                        <DDIDTab />
+                    </Route>
+                    <Route exact path={"/damnson"}>
+                        <WalletTab />
+                    </Route>
+                    <Route exact path="/">
+                        <Redirect to="/home"/>
+                    </Route>
+                </IonRouterOutlet>
+                <IonTabBar slot="bottom">
+                    <IonTabButton tab="tab1" href="/home">
+                        <IonIcon icon={accessibility}/>
+                        <IonLabel>UDI</IonLabel>
+                    </IonTabButton>
+                    <IonTabButton tab="tab2" href="/something">
+                        <IonIcon icon={glasses}/>
+                        <IonLabel>DDID</IonLabel>
+                    </IonTabButton>
+                    <IonTabButton tab="tab3" href="/damnson">
+                        <IonIcon icon={wallet}/>
+                        <IonLabel>Wallet</IonLabel>
+                    </IonTabButton>
+                </IonTabBar>
+            </IonTabs>
+        </IonReactRouter>
+    </IonApp>
 );
 
 export default App;
