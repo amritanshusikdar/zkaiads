@@ -7,15 +7,13 @@ import {
   IonToolbar,
 } from "@ionic/react"
 import YourDigitalWallet from "../../components/YourDigitalWallet"
+import Header from "../../components/Header"
 
 const WalletTab: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Zkai Ads 3</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <Header />
+
       <IonContent fullscreen>
         <YourDigitalWallet />
       </IonContent>

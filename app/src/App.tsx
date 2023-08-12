@@ -1,6 +1,7 @@
 import { Redirect, Route } from "react-router-dom"
 import {
   IonApp,
+  IonHeader,
   IonIcon,
   IonLabel,
   IonPage,
@@ -8,6 +9,8 @@ import {
   IonTabBar,
   IonTabButton,
   IonTabs,
+  IonTitle,
+  IonToolbar,
   setupIonicReact,
 } from "@ionic/react"
 import { IonReactRouter } from "@ionic/react-router"
@@ -34,43 +37,45 @@ import "./theme/variables.css"
 import { accessibility, glasses, wallet } from "ionicons/icons"
 import DDIDTab from "./pages/DDID/DDIDTab"
 import WalletTab from "./pages/Wallet/WalletTab"
-
+import Wallet from "./components/Wallet"
 setupIonicReact()
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonTabs>
-        <IonRouterOutlet>
-          <Route exact path="/home">
-            <UDITab />
-          </Route>
-          <Route exact path={"/something"}>
-            <DDIDTab />
-          </Route>
-          <Route exact path={"/damnson"}>
-            <WalletTab />
-          </Route>
-          <Route exact path="/">
-            <Redirect to="/home" />
-          </Route>
-        </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/home">
-            <IonIcon icon={accessibility} />
-            <IonLabel>UDI</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab2" href="/something">
-            <IonIcon icon={glasses} />
-            <IonLabel>DDID</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/damnson">
-            <IonIcon icon={wallet} />
-            <IonLabel>Wallet</IonLabel>
-          </IonTabButton>
-        </IonTabBar>
-      </IonTabs>
-    </IonReactRouter>
+    <Wallet>
+      <IonReactRouter>
+        <IonTabs>
+          <IonRouterOutlet>
+            <Route exact path="/home">
+              <UDITab />
+            </Route>
+            <Route exact path={"/something"}>
+              <DDIDTab />
+            </Route>
+            <Route exact path={"/damnson"}>
+              <WalletTab />
+            </Route>
+            <Route exact path="/">
+              <Redirect to="/home" />
+            </Route>
+          </IonRouterOutlet>
+          <IonTabBar slot="bottom">
+            <IonTabButton tab="tab1" href="/home">
+              <IonIcon icon={accessibility} />
+              <IonLabel>UDI</IonLabel>
+            </IonTabButton>
+            <IonTabButton tab="tab2" href="/something">
+              <IonIcon icon={glasses} />
+              <IonLabel>DDID</IonLabel>
+            </IonTabButton>
+            <IonTabButton tab="tab3" href="/damnson">
+              <IonIcon icon={wallet} />
+              <IonLabel>Wallet</IonLabel>
+            </IonTabButton>
+          </IonTabBar>
+        </IonTabs>
+      </IonReactRouter>
+    </Wallet>
   </IonApp>
 )
 
