@@ -4,13 +4,11 @@ import { Pagination } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/pagination"
 import "./swiper.css"
-import { SwipeableImageStack } from "./SwipeableImageStack/SwipeableImageStack"
 
 enum PageState {
   "a",
   "b",
   "c",
-  "d",
 }
 
 export default function UniversalDataIncome() {
@@ -51,9 +49,6 @@ export default function UniversalDataIncome() {
           </div>
         )
         break
-
-      case PageState.d:
-        content = <SwipeableImageStack />
     }
 
     return content
@@ -72,7 +67,6 @@ export default function UniversalDataIncome() {
         <SwiperSlide>{renderContent(PageState.a)}</SwiperSlide>
         <SwiperSlide>{renderContent(PageState.b)}</SwiperSlide>
         <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
-        <SwiperSlide>{renderContent(PageState.d)}</SwiperSlide>
       </Swiper>
     </div>
   )

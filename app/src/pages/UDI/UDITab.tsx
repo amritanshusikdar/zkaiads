@@ -40,7 +40,7 @@ const UDITab: React.FC = () => {
                         <IonTitle size="large">Zkai Ads 1</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                {/*<UniversalDataIncome />*/}
+                <UniversalDataIncome />
                 <SwipeableImageStack images={adsList.images} />
             </IonContent>
         </IonPage>
