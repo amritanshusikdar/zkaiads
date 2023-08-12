@@ -56,18 +56,16 @@ export default function UniversalDataIncome() {
   }
 
   return (
-    <IonPage>
-      <IonContent>
-        <h1>Universal Data Income</h1>
+    <>
+      <h1>Universal Data Income</h1>
 
-        <Swiper>
-          <SwiperSlide>{renderContent(PageState.a)}</SwiperSlide>
-          <SwiperSlide>{renderContent(PageState.b)}</SwiperSlide>
-          <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
-          <SwiperSlide>{renderContent(PageState.d)}</SwiperSlide>
-        </Swiper>
-      </IonContent>
-    </IonPage>
+      <Swiper>
+        <SwiperSlide>{renderContent(PageState.a)}</SwiperSlide>
+        <SwiperSlide>{renderContent(PageState.b)}</SwiperSlide>
+        <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
+        <SwiperSlide>{renderContent(PageState.d)}</SwiperSlide>
+      </Swiper>
+    </>
   )
 }
 

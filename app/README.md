@@ -3,6 +3,7 @@
 ## Run
 
 `npm install -g @ionic/cli` - install ionic
+`brew install cocoapods`
 
 Have a simulator (xcode installed) running:
 [further resources](https://stackoverflow.com/a/69545643/6345768)
