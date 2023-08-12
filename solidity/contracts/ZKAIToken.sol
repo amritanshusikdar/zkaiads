@@ -8,6 +8,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract ZKAIToken is ERC20, ERC20Burnable, Ownable {
     mapping(bytes32 => bool) public whitelist;
     mapping(bytes32 => string) public adKeys;
+    mapping(uint256 => string) private ipfsHashes;
+
     uint256 public tokenPool = 1000000 * 10 ** decimals();
 
     constructor() ERC20("ZKAIToken", "ZKAI") {
@@ -16,6 +18,12 @@ contract ZKAIToken is ERC20, ERC20Burnable, Ownable {
 
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
+    }
+
+    function getImageIPFSHash(
+        uint256 imageId
+    ) public view returns (string memory) {
+        return ipfsHashes[imageId];
     }
 
     // Ad Targeting logic
@@ -36,7 +44,10 @@ contract ZKAIToken is ERC20, ERC20Burnable, Ownable {
     }
 
     // Pay ad user with token when ad is swiped on phone app
-    function payUserForAdSwipe(address user, bool swipedRight) public onlyOwner {
+    function payUserForAdSwipe(
+        address user,
+        bool swipedRight
+    ) public onlyOwner {
         console.log("Receiving event that target ad was swiped");
         // track whether user swiped right or left
         if (swipedRight) {
