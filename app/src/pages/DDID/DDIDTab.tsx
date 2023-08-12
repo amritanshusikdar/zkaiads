@@ -8,15 +8,13 @@ import {
   IonToolbar,
 } from "@ionic/react"
 import DataBackedDID from "../../components/DataBackedDID"
+import Header from "../../components/Header"
 
 const DDIDTab: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Zkai Ads 2</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <Header />
+
       <IonContent fullscreen>
         <DataBackedDID />
       </IonContent>
