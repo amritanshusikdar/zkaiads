@@ -4,6 +4,7 @@ pragma solidity ^0.8.9;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "hardhat/console.sol";
 
 contract ZKAIToken is ERC20, ERC20Burnable, Ownable {
     mapping(bytes32 => bool) public whitelist;
@@ -36,7 +37,10 @@ contract ZKAIToken is ERC20, ERC20Burnable, Ownable {
     }
 
     // Pay ad user with token when ad is swiped on phone app
-    function payUserForAdSwipe(address user, bool swipedRight) public onlyOwner {
+    function payUserForAdSwipe(
+        address user,
+        bool swipedRight
+    ) public onlyOwner {
         console.log("Receiving event that target ad was swiped");
         // track whether user swiped right or left
         if (swipedRight) {
