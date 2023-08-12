@@ -12,23 +12,30 @@ import {
 } from "@ionic/react";
 import {useRef} from "react";
 
-interface SwipeableImageStackProps {
+export interface SwipeableImageStackProps {
+    images: SwipeableImageProps[]
 }
 
-export const SwipeableImageStack: React.FC<SwipeableImageStackProps> = () => {
-    return <>
+interface SwipeableImageProps {
+    path: string
+    alt: string
+}
+
+export const SwipeableImageStack: React.FC<SwipeableImageStackProps> = (props) => {
+    return <div>
         <div style={{position: "relative"}}>
-            <SwipeableImage />
-            <SwipeableImage />
+            {props.images.map((image, index) =>
+                <SwipeableImage key={index} path={image.path} alt={image.alt}/>
+            )}
         </div>
         <div>
             <IconButton icon={close} text={"Nope"}/>
             <IconButton icon={checkmark} text={"Yep"}/>
         </div>
-    </>
+    </div>
 }
 
-const SwipeableImage: React.FC<SwipeableImageStackProps> = () => {
+const SwipeableImage: React.FC<SwipeableImageProps> = (props) => {
     const windowWidth = window.innerWidth;
     const cardRef = useRef<HTMLIonCardElement | null>(null);
 
@@ -67,7 +74,7 @@ const SwipeableImage: React.FC<SwipeableImageStackProps> = () => {
             top: 0,
             left: 0,
         }} ref={cardRef}>
-            <IonImg src={"assets/ironman.jpg"} alt={"Iron Man"}/>
+            <IonImg src={props.path} alt={props.alt}/>
         </IonCard>
     );
 };
