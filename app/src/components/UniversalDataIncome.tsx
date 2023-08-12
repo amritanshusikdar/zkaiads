@@ -1,10 +1,10 @@
-import React, { useState } from "react"
-import { ellipseOutline } from "ionicons/icons"
-import { IonContent, IonPage, IonIcon } from "@ionic/react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination } from "swiper/modules"
 
 import "swiper/css"
-import "@ionic/react/css/ionic-swiper.css"
+import "swiper/css/pagination"
+import "./swiper.css"
+import { SwipeableImageStack } from "./SwipeableImageStack/SwipeableImageStack"
 
 enum PageState {
   "a",
@@ -50,6 +50,10 @@ export default function UniversalDataIncome() {
             <button onClick={onStart}>Start</button>
           </div>
         )
+        break
+
+      case PageState.d:
+        content = <SwipeableImageStack />
     }
 
     return content
@@ -59,7 +63,12 @@ export default function UniversalDataIncome() {
     <>
       <h1>Universal Data Income</h1>
 
-      <Swiper>
+      <Swiper
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+      >
         <SwiperSlide>{renderContent(PageState.a)}</SwiperSlide>
         <SwiperSlide>{renderContent(PageState.b)}</SwiperSlide>
         <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
@@ -67,16 +76,4 @@ export default function UniversalDataIncome() {
       </Swiper>
     </>
   )
-}
-
-{
-  /* <button onClick={() => setPageState(PageState.a)}>
-        <IonIcon icon={ellipseOutline} size="large" color="primary"></IonIcon>
-      </button>
-      <button onClick={() => setPageState(PageState.b)}>
-        <IonIcon icon={ellipseOutline} size="large" color="primary"></IonIcon>
-      </button>
-      <button onClick={() => setPageState(PageState.c)}>
-        <IonIcon icon={ellipseOutline} size="large" color="primary"></IonIcon>
-      </button> */
 }

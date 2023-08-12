@@ -5,9 +5,8 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react"
-import { SwipeableImageStack } from "../../components/SwipeableImageStack/SwipeableImageStack"
-import "./UDITab.css"
 import UniversalDataIncome from "../../components/UniversalDataIncome"
+import "./UDITab.css"
 
 const UDITab: React.FC = () => {
   return (
@@ -18,8 +17,6 @@ const UDITab: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        {/* <SwipeableImageStack /> */}
-
         <UniversalDataIncome />
       </IonContent>
     </IonPage>
