@@ -37,12 +37,12 @@ import "./theme/variables.css"
 import { accessibility, glasses, wallet } from "ionicons/icons"
 import DDIDTab from "./pages/DDID/DDIDTab"
 import WalletTab from "./pages/Wallet/WalletTab"
-import Wallet from "./components/Wallet"
+
 setupIonicReact()
 
-const App: React.FC = () => (
-  <IonApp>
-    <Wallet>
+const App: React.FC = () => {
+  return (
+    <IonApp>
       <IonReactRouter>
         <IonTabs>
           <IonRouterOutlet>
@@ -75,8 +75,8 @@ const App: React.FC = () => (
           </IonTabBar>
         </IonTabs>
       </IonReactRouter>
-    </Wallet>
-  </IonApp>
-)
+    </IonApp>
+  )
+}
 
 export default App

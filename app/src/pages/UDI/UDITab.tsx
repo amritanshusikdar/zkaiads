@@ -32,11 +32,6 @@ const UDITab: React.FC = () => {
       <Header />
 
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          {/* <IonToolbar>
-            <IonTitle size="large">Zkai Ads 1</IonTitle>
-          </IonToolbar> */}
-        </IonHeader>
         {/*<UniversalDataIncome />*/}
 
         <SwipeableImageStack images={adsList.images} />
