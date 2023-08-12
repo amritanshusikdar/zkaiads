@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ba2ca8-5bef-4d24-bd40-0b5915133d56" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/assets/ironman.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/components/SwipeableImageStack/SwipeableImageStack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/SwipeableImageStack/SwipeableImageStack.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/UDI/UDITab.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/UDI/UDITab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
       <workItem from="1691834960372" duration="1260000" />
       <workItem from="1691838872754" duration="459000" />
       <workItem from="1691839340950" duration="31000" />
-      <workItem from="1691839380584" duration="5663000" />
+      <workItem from="1691839380584" duration="6856000" />
     </task>
     <servers />
   </component>
