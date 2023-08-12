@@ -58,16 +58,14 @@ export default function DataBackedDID() {
   }
 
   return (
-    <IonPage>
-      <IonContent>
-        <h1>Data-backed DID</h1>
+    <>
+      <h1>Data-backed DID</h1>
 
-        <Swiper>
-          <SwiperSlide>{renderContent(PageState.a)}</SwiperSlide>
-          <SwiperSlide>{renderContent(PageState.b)}</SwiperSlide>
-          <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
-        </Swiper>
-      </IonContent>
-    </IonPage>
+      <Swiper>
+        <SwiperSlide>{renderContent(PageState.a)}</SwiperSlide>
+        <SwiperSlide>{renderContent(PageState.b)}</SwiperSlide>
+        <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
+      </Swiper>
+    </>
   )
 }

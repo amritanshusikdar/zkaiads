@@ -60,7 +60,7 @@ export default function UniversalDataIncome() {
   }
 
   return (
-    <>
+    <div style={{ height: "100px" }}>
       <h1>Universal Data Income</h1>
 
       <Swiper
@@ -74,6 +74,6 @@ export default function UniversalDataIncome() {
         <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
         <SwiperSlide>{renderContent(PageState.d)}</SwiperSlide>
       </Swiper>
-    </>
+    </div>
   )
 }
