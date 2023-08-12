@@ -26,6 +26,7 @@
     "@ionic/react-router": "^7.0.0",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
+    "ethers": "^6.7.0",
     "expo": "^49.0.7",
     "ionicons": "^7.0.0",
     "react": "^18.2.0",
