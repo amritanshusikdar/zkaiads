@@ -9,7 +9,10 @@
     "preview": "vite preview",
     "test.e2e": "cypress run",
     "test.unit": "vitest",
-    "lint": "eslint"
+    "lint": "eslint",
+    "ionic:sync": "ionic cap sync",
+    "ionic:build": "ionic cap build ios",
+    "ionic:run": "ionic cap run ios --external --livereload"
   },
   "dependencies": {
     "@capacitor/android": "5.2.3",

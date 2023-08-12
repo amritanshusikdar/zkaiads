@@ -10,16 +10,17 @@ enum PageState {
   "a",
   "b",
   "c",
+  "d",
 }
 
 export default function UniversalDataIncome() {
-  const [pageState, setPageState] = useState(PageState.a)
+  //   const [pageState, setPageState] = useState(PageState.a)
 
   const onStart = () => {
     console.log("NOT IMPLEMENTED")
   }
 
-  const renderContent = () => {
+  const renderContent = (pageState: PageState) => {
     let content = null
 
     switch (pageState) {
@@ -60,9 +61,10 @@ export default function UniversalDataIncome() {
         <h1>Universal Data Income</h1>
 
         <Swiper>
-          <SwiperSlide>{renderContent()}</SwiperSlide>
-          <SwiperSlide>{renderContent()}</SwiperSlide>
-          <SwiperSlide>{renderContent()}</SwiperSlide>
+          <SwiperSlide>{renderContent(PageState.a)}</SwiperSlide>
+          <SwiperSlide>{renderContent(PageState.b)}</SwiperSlide>
+          <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
+          <SwiperSlide>{renderContent(PageState.d)}</SwiperSlide>
         </Swiper>
       </IonContent>
     </IonPage>

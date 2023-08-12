@@ -13,13 +13,13 @@ enum PageState {
 }
 
 export default function DataBackedDID() {
-  const [pageState, setPageState] = useState(PageState.a)
+  // const [pageState, setPageState] = useState(PageState.a)
 
   const onStart = () => {
     console.log("NOT IMPLEMENTED")
   }
 
-  const renderContent = () => {
+  const renderContent = (pageState: PageState) => {
     let content = null
 
     switch (pageState) {
@@ -63,9 +63,9 @@ export default function DataBackedDID() {
         <h1>Data-backed DID</h1>
 
         <Swiper>
-          <SwiperSlide>{renderContent()}</SwiperSlide>
-          <SwiperSlide>{renderContent()}</SwiperSlide>
-          <SwiperSlide>{renderContent()}</SwiperSlide>
+          <SwiperSlide>{renderContent(PageState.a)}</SwiperSlide>
+          <SwiperSlide>{renderContent(PageState.b)}</SwiperSlide>
+          <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
         </Swiper>
       </IonContent>
     </IonPage>
