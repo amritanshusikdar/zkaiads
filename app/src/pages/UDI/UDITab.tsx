@@ -5,15 +5,65 @@ import UniversalDataIncome from "../../components/UniversalDataIncome";
 import {useEffect, useState} from "react";
 
 const UDITab: React.FC = () => {
-    const [adsList, setAdsList] = useState<SwipeableImageStackProps>({images: []});
+    const adsList = {
+        images: [
+            {
+                path: "assets/sale1.png",
+                alt: "sale1",
+            },
+            {
+                path: "assets/sale2.png",
+                alt: "sale2",
+            },
+            {
+                path: "assets/sale3.png",
+                alt: "sale3",
+            },
+            {
+                path: "assets/sale4.png",
+                alt: "sale4",
+            },
+            {
+                path: "assets/sale5.png",
+                alt: "sale5",
+            },
+        ],
+    };
 
-    useEffect(() => {
-        fetch("http://localhost:3000/")
-            .then(res => res.json())
-            .then(res => setAdsList(res))
 
-        console.log({ adsList });
-    }, [adsList.images]);
+    // const [adsList, setAdsList] = useState<SwipeableImageStackProps>({images: []});
+    // useEffect(() => {
+    //     // fetch("http://localhost:3000/")
+    //     //     .then(res => res.json())
+    //     //     .then(res => setAdsList(res))
+    //
+    //     const adsList = {
+    //         images: [
+    //             {
+    //                 path: "assets/sale1.png",
+    //                 alt: "sale1",
+    //             },
+    //             {
+    //                 path: "assets/sale2.png",
+    //                 alt: "sale2",
+    //             },
+    //             {
+    //                 path: "assets/sale3.png",
+    //                 alt: "sale3",
+    //             },
+    //             {
+    //                 path: "assets/sale4.png",
+    //                 alt: "sale4",
+    //             },
+    //             {
+    //                 path: "assets/sale5.png",
+    //                 alt: "sale5",
+    //             },
+    //         ],
+    //     };
+    //
+    //     setAdsList(adsList);
+    // }, [adsList, adsList.images]);
 
     return (
         <IonPage>
@@ -29,7 +79,7 @@ const UDITab: React.FC = () => {
                     </IonToolbar>
                 </IonHeader>
                 {/*<UniversalDataIncome />*/}
-                <SwipeableImageStack images={adsList.images} />
+                <SwipeableImageStack images={adsList.images}/>
             </IonContent>
         </IonPage>
     );
