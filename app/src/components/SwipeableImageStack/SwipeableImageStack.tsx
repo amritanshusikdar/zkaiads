@@ -2,15 +2,14 @@ import "./SwipeableImageStack.css"
 import {IconButton} from "../IconButton/IconButton"
 import {checkmark, close} from "ionicons/icons"
 import {
-    CreateAnimation,
     createGesture,
     Gesture,
     GestureDetail,
     IonCard,
     IonImg,
-    useIonViewDidEnter,
+    useIonViewDidEnter, useIonViewDidLeave, useIonViewWillLeave,
 } from "@ionic/react"
-import {useRef} from "react"
+import {useCallback, useEffect, useRef, useState} from "react"
 
 export interface SwipeableImageStackProps {
     images: SwipeableImageProps[]
@@ -19,23 +18,36 @@ export interface SwipeableImageStackProps {
 interface SwipeableImageProps {
     path: string
     alt: string
+    callback?: any
 }
 
 export const SwipeableImageStack: React.FC<SwipeableImageStackProps> = (
     props
 ) => {
+    const [images, setImages] = useState<SwipeableImageStackProps>(props);
+
+    useEffect(() => {
+        console.log(images);
+    }, [images]);
+
     return (
         <div>
             <div style={{height: "56vh"}}>
                 <div style={{position: "relative"}}>
-                    {props.images.map((image, index) => (
-                        <SwipeableImage key={index} path={image.path} alt={image.alt}/>
+                    {images.images.map((image, index) => (
+                        <SwipeableImage key={index} path={image.path} alt={image.alt} callback={() => {
+                            setImages({images: images.images.slice(0, images.images.length - 1)})
+                        }} />
                     ))}
                 </div>
             </div>
             <div style={{display: "flex", justifyContent: "space-evenly"}}>
-                <IconButton icon={close} text={"Nope"}/>
-                <IconButton icon={checkmark} text={"Yep"}/>
+                <IconButton icon={close} text={"Nope"} onClickHandler={
+                    () => setImages({ images: images.images.slice(0, images.images.length - 1) })}
+                />
+                <IconButton icon={checkmark} text={"Yep"} onClickHandler={
+                    () => setImages({ images: images.images.slice(0, images.images.length - 1) })}
+                />
             </div>
         </div>
     )
@@ -68,10 +80,11 @@ const SwipeableImage: React.FC<SwipeableImageProps> = (props) => {
                 } else {
                     cardRefStyle!.transform = ""
                 }
+                props.callback();
             },
         })
-        gesture.enable()
-    })
+        gesture.enable();
+    });
 
     return (
         <div style={{
