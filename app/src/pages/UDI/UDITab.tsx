@@ -69,13 +69,13 @@ const UDITab: React.FC = () => {
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>Zkai Ads 1</IonTitle>
+                    <IonTitle>Zkai Ads</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
                 <IonHeader collapse="condense">
                     <IonToolbar>
-                        <IonTitle size="large">Zkai Ads 1</IonTitle>
+                        <IonTitle size="large">Zkai Ads</IonTitle>
                     </IonToolbar>
                 </IonHeader>
                 {/*<UniversalDataIncome />*/}
