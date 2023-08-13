@@ -26,10 +26,12 @@ export const SwipeableImageStack: React.FC<SwipeableImageStackProps> = (
 ) => {
     return (
         <div>
-            <div style={{position: "relative", minHeight: "56vh"}}>
-                {props.images.map((image, index) => (
-                    <SwipeableImage key={index} path={image.path} alt={image.alt}/>
-                ))}
+            <div style={{height: "56vh"}}>
+                <div style={{position: "relative"}}>
+                    {props.images.map((image, index) => (
+                        <SwipeableImage key={index} path={image.path} alt={image.alt}/>
+                    ))}
+                </div>
             </div>
             <div style={{display: "flex", justifyContent: "space-evenly"}}>
                 <IconButton icon={close} text={"Nope"}/>
@@ -80,7 +82,7 @@ const SwipeableImage: React.FC<SwipeableImageProps> = (props) => {
             right: "5%",
         }}>
             <IonCard ref={cardRef} style={{padding: 20}}>
-                <IonImg src={props.path} alt={props.alt} />
+                <IonImg src={props.path} alt={props.alt}/>
             </IonCard>
         </div>
     )
