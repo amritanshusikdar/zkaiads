@@ -7,6 +7,10 @@ import {useEffect, useState} from "react";
 const UDITab: React.FC = () => {
     const [firstRun, setFirstRun] = useState<boolean>(true);
 
+    useEffect(() => {
+
+    }, [firstRun]);
+
     const adsList = {
         images: [
             {
@@ -45,11 +49,16 @@ const UDITab: React.FC = () => {
                         <IonTitle size="large">Zkai Ads</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                {
-                    firstRun
-                        ? <UniversalDataIncome onClickHandler={() => setFirstRun(false)}/>
-                        : <SwipeableImageStack images={adsList.images}/>
+                {/*<SwipeableImageStack images={adsList.images}/>*/}
+                {firstRun &&
+                    <div style={{height: "100%"}}>
+                        <UniversalDataIncome onClickHandler={() => setFirstRun(false)}/>
+                    </div>
                 }
+                <div style={{display: firstRun ? "none" : ""}}>
+                    <SwipeableImageStack images={adsList.images}/>
+                </div>
+
             </IonContent>
         </IonPage>
     );

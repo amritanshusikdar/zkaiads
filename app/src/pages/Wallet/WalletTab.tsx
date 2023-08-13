@@ -13,7 +13,7 @@ const WalletTab: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Zkai Ads 3</IonTitle>
+          <IonTitle>Zkai Ads</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
