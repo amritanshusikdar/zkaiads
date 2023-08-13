@@ -43,7 +43,7 @@ export default function YourDigitalWallet() {
                             the power to block or control it but you.
                         </p>
 
-                        <button onClick={onStart}>Start</button>
+                        <IonButton onClick={onStart}>Start</IonButton>
                     </div>
                 )
         }
@@ -52,7 +52,7 @@ export default function YourDigitalWallet() {
     }
 
     return (
-        <>
+        <div style={{height: "50vh", padding: 16}}>
             <h1>Your Digital Wallet</h1>
 
             <Swiper>
@@ -60,6 +60,6 @@ export default function YourDigitalWallet() {
                 <SwiperSlide>{renderContent(PageState.b)}</SwiperSlide>
                 <SwiperSlide>{renderContent(PageState.c)}</SwiperSlide>
             </Swiper>
-        </>
+        </div>
     )
 }
